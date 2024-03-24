@@ -8,7 +8,12 @@ class program()
     static void Main(string[] args)
     {
         SayaTube s = new SayaTube("Tutorial Design By Contract - [Haikal Risnandar]");
-        s.increasePlaycount(102030);
+        s.increasePlaycount(10000000);
+        s.printvideoDetails();
+        for (int i = 0; i < 1000; i++)
+        {
+            s.increasePlaycount(10000000);
+        }
         s.printvideoDetails();
     }
 }
